@@ -79,7 +79,7 @@ const App = () => {
     setTimeout(() => {
       setShowAnimation(false);
       setShowResult(true);
-    }, 5000);
+    }, 3000);
   };
 
   const resetExperiment = () => {

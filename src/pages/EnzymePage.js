@@ -57,17 +57,21 @@ const EnzymePage = () => {
                     </h1>
                 </div>
 
-                <div className="text-center my-3 fs-5 text-secondary">
-                    在高溫殺死的S型菌液中加入...
-                </div>
+                {!showResult && !showAnimation ?
+                    <div className="text-center my-3 fs-5 text-secondary">
+                        在高溫殺死的S型菌液中加入...
+                    </div>
+                    : <div></div>}
 
-                <div className="text-center mb-4">
-                    <img
-                        src={process.env.PUBLIC_URL + "/img/bottle.png"}
-                        alt={'bottle'}
-                        style={{width: 200, height: 170}}
-                    />
-                </div>
+                {!showResult && !showAnimation ?
+                    <div className="text-center mb-4">
+                        <img
+                            src={process.env.PUBLIC_URL + "/img/bottle.png"}
+                            alt={'bottle'}
+                            style={{width: 200, height: 170}}
+                        />
+                    </div>
+                    : <div></div>}
 
                 <div className="card shadow-lg p-4 border-info" style={{borderRadius: '25px'}}>
                     <AnimatePresence mode="wait">

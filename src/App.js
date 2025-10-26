@@ -66,7 +66,10 @@ const App = () => {
       let mousePicture =  process.env.PUBLIC_URL + "/aliveMouse.png";
       if (final === '小鼠死掉了') mousePicture = process.env.PUBLIC_URL + "/deadMouse.png";
 
-      return { strain: strain.label, temp: temp.label, result: final, mousePicture: mousePicture };
+      let bloodPicture = "";
+      if (final === '小鼠死掉了') bloodPicture = process.env.PUBLIC_URL + "/blood.png";
+
+      return { strain: strain.label, temp: temp.label, result: final, mousePicture: mousePicture, bloodPicture: bloodPicture };
     });
 
     setResults(newResults);
@@ -222,6 +225,14 @@ const App = () => {
                           style={{width: 400, height: 100}}
                           className="rounded-circle"
                       />
+                      {results[0]?.bloodPicture && (
+                          <img
+                              src={results[0].bloodPicture}
+                              alt={results[0]?.result || "blood"}
+                              style={{ width: 100, height: 50 }}
+                              className="rounded-circle"
+                          />
+                      )}
                     </div>
                     <table className="table table-bordered text-center align-middle">
                       <thead className="table-info">

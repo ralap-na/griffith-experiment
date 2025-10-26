@@ -159,7 +159,7 @@ const EnzymePage = () => {
                                 <table className="table table-bordered text-center align-middle mt-4">
                                     <thead className="table-info">
                                     <tr>
-                                        <th>菌種</th>
+                                        <th>酵素</th>
                                         <th>狀態</th>
                                     </tr>
                                     </thead>

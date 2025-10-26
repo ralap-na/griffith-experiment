@@ -90,9 +90,7 @@ const TransformationPage = () => {
         setResults([]);
     };
 
-    const isAnalysisDisabled =
-        strainSelection.length === 0 ||
-        strainSelection.some((id) => tempSelection[id] === null);
+    const isAnalysisDisabled = strainSelection.length === 0 ;
 
     return (
         <div style={{ backgroundColor: '#d9f0f7', minHeight: '100vh' }}>

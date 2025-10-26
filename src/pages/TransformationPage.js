@@ -126,7 +126,7 @@ const TransformationPage = () => {
                                             key={strain.id}
                                             className="d-flex align-items-center justify-content-around border-top py-3"
                                         >
-                                            <div className="text-center">
+                                            <div className="text-center" style={{width: '150px'}}>
                                                 <img
                                                     src={strain.image}
                                                     alt={strain.label}
@@ -143,7 +143,7 @@ const TransformationPage = () => {
                                                 </div>
                                             </div>
 
-                                            <div style={{minHeight: "40px"}}>
+                                            <div style={{minHeight: "40px", width: '300px'}}>
                                                 <AnimatePresence mode="wait">
                                                     {isChecked && (
                                                         <motion.div
@@ -222,19 +222,20 @@ const TransformationPage = () => {
                                     <img
                                         src={results[0]?.mousePicture}
                                         alt={results[0]?.result}
-                                        style={{width: 400, height: 100}}
-                                        className="rounded-circle"
+                                        style={{width: 250, height: 50}}
                                     />
+                                    {results[0]?.bloodPicture && (
+                                        <div className="mt-4"/>)}
+
                                     {results[0]?.bloodPicture && (
                                         <img
                                             src={results[0].bloodPicture}
                                             alt={results[0]?.result || "blood"}
                                             style={{ width: 100, height: 50 }}
-                                            className="rounded-circle"
                                         />
                                     )}
                                 </div>
-                                <table className="table table-bordered text-center align-middle">
+                                <table className="table table-bordered text-center align-middle mt-4">
                                     <thead className="table-info">
                                     <tr>
                                         <th>菌種+溫度</th>

@@ -9,8 +9,12 @@ export default function Home() {
             <p className="text-muted mb-4">Select an experiment to explore:</p>
 
             <div style={{display: 'flex', flexDirection: 'column', gap: '10px', alignItems: 'center'}}>
-                <button className="btn btn-success" onClick={() => navigate('/enzyme')}>Enzyme Transformation</button>
-                <button className="btn btn-primary" onClick={() => navigate('/transformation')}>Transformation Experiment</button>
+                <button className="btn btn-primary" onClick={() => navigate('/transformation')}>Transformation
+                    Experiment
+                </button>
+                <button className="btn btn-success" onClick={() => navigate('/enzyme')}>
+                    Enzyme Transformation
+                </button>
             </div>
 
         </div>

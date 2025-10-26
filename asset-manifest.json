@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/griffith-experiment/static/css/main.3b71cc2a.css",
-    "main.js": "/griffith-experiment/static/js/main.5ec7f041.js",
+    "main.js": "/griffith-experiment/static/js/main.c8241575.js",
     "static/js/453.8fef6898.chunk.js": "/griffith-experiment/static/js/453.8fef6898.chunk.js",
     "index.html": "/griffith-experiment/index.html",
     "main.3b71cc2a.css.map": "/griffith-experiment/static/css/main.3b71cc2a.css.map",
-    "main.5ec7f041.js.map": "/griffith-experiment/static/js/main.5ec7f041.js.map",
+    "main.c8241575.js.map": "/griffith-experiment/static/js/main.c8241575.js.map",
     "453.8fef6898.chunk.js.map": "/griffith-experiment/static/js/453.8fef6898.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3b71cc2a.css",
-    "static/js/main.5ec7f041.js"
+    "static/js/main.c8241575.js"
   ]
 }

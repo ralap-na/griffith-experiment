@@ -49,15 +49,15 @@ const TransformationPage = () => {
             if (id === 'S' && tempSelection[id] === 'RT') {
                 final = '小鼠死掉了';
             } else if (id === 'S' && tempSelection[id] === 'HT' && strainSelection.includes('R')) {
-                if (tempSelection['R'] === 'HT') {
+                if (tempSelection['R'] === 'RT') {
                     final = '小鼠死掉了';
                 }
             } else if (id === 'R') {
                 if (strainSelection.includes('S')) {
                     const sTempId = tempSelection['S'];
-                    if (tempSelection[id] === 'RT') {
+                    if (sTempId === 'RT') {
                         final = '小鼠死掉了';
-                    } else if (tempSelection[id] === 'HT' && sTempId === 'RT') {
+                    } else if (tempSelection[id] === 'RT' && sTempId === 'HT') {
                         final = '小鼠死掉了';
                     }
                 }

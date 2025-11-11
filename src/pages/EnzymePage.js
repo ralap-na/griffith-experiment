@@ -133,7 +133,7 @@ const EnzymePage = () => {
                                 className="text-center py-5"
                             >
                                 <img
-                                    src={process.env.PUBLIC_URL + "/img/bottle.png"}
+                                    src={process.env.PUBLIC_URL + "/img/water.gif"}
                                     alt="倒入R型活菌中..."
                                     style={{maxWidth: '400px', width: '100%'}}
                                 />

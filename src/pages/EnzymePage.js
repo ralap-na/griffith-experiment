@@ -20,11 +20,11 @@ const EnzymePage = () => {
 
         const strain = enzyme.find((s) => s.id === enzymeSelection);
 
-        let final = '有轉型!!!';
+        let final = '有轉形!!!';
         let finalPicture = process.env.PUBLIC_URL + "/img/transformation.png";
 
         if (enzymeSelection === 'DNase') {
-            final = '沒有轉型!!!';
+            final = '沒有轉形!!!';
             finalPicture = process.env.PUBLIC_URL + "/img/noTransformation.png";
         }
 

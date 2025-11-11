@@ -48,7 +48,7 @@ const EnzymePage = () => {
     };
 
     return (
-        <div style={{ backgroundColor: '#CEDED8', minHeight: '100vh' }}>
+        <div style={{backgroundColor: '#CEDED8', minHeight: '100vh'}}>
             <div className="container py-5">
                 <div className="text-center mb-3">
                     <h1 className="h2 text-success">
@@ -172,7 +172,7 @@ const EnzymePage = () => {
                                 </table>
 
                                 <div className="text-center mt-3">
-                                    <button className="btn btn-outline-primary" onClick={resetExperiment}>
+                                    <button className="btn btn-outline-success" onClick={resetExperiment}>
                                         <RotateCcw size={16} className="me-1"/> 重新實驗
                                     </button>
                                 </div>
@@ -180,6 +180,22 @@ const EnzymePage = () => {
                         )}
                     </AnimatePresence>
                 </div>
+            </div>
+            <div
+                style={{
+                    position: 'absolute',
+                    bottom: '10px',
+                    right: '15px',
+                    opacity: 0.5,
+                    fontSize: '0.8rem',
+                    color: '#6c757d',
+                    userSelect: 'none',
+                    textAlign: 'right',
+                    lineHeight: '1.2',
+                }}
+            >
+                © 2025 YC Hsu & SY Tang<br/>
+                Nonprofit, for educational use only
             </div>
         </div>
     );

@@ -97,20 +97,20 @@ const TransformationPage = () => {
             <div className="container py-5">
                 <div className="text-center mb-3">
                     <h1 className="h2 text-primary">
-                        <FlaskConical size={36} className="me-2" />
+                        <FlaskConical size={36} className="me-2"/>
                         轉形實驗 - 肺炎鏈球菌與小鼠
                     </h1>
                 </div>
 
-                <div className="card shadow-lg p-4 border-info" style={{ borderRadius: '25px' }}>
+                <div className="card shadow-lg p-4 border-info" style={{borderRadius: '25px'}}>
                     <AnimatePresence mode="wait">
                         {!showResult && !showAnimation ? (
                             <motion.div
                                 key="selection"
-                                initial={{ opacity: 0, y: 15 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: -15 }}
-                                transition={{ duration: 0.4 }}
+                                initial={{opacity: 0, y: 15}}
+                                animate={{opacity: 1, y: 0}}
+                                exit={{opacity: 0, y: -15}}
+                                transition={{duration: 0.4}}
                             >
                                 <div className="d-flex justify-content-around text-center fw-bold mb-3">
                                     <div>菌種</div>
@@ -153,7 +153,8 @@ const TransformationPage = () => {
                                                             className="d-flex justify-content-center gap-4"
                                                         >
                                                             {temperatures.map((temp) => (
-                                                                <div key={`${strain.id}-${temp.id}`} className="text-center">
+                                                                <div key={`${strain.id}-${temp.id}`}
+                                                                     className="text-center">
                                                                     <input
                                                                         type="radio"
                                                                         name={`temp-${strain.id}`}
@@ -161,7 +162,8 @@ const TransformationPage = () => {
                                                                         onChange={() => handleTempChange(strain.id, temp.id)}
                                                                     />{" "}
                                                                     <label>
-                                                                        <Thermometer size={18} className="text-dark"/> {temp.label}
+                                                                        <Thermometer size={18}
+                                                                                     className="text-dark"/> {temp.label}
                                                                     </label>
                                                                 </div>
                                                             ))}
@@ -194,16 +196,16 @@ const TransformationPage = () => {
                         ) : showAnimation ? (
                             <motion.div
                                 key="animation"
-                                initial={{ opacity: 0, scale: 0.8 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                exit={{ opacity: 0, scale: 0.8 }}
-                                transition={{ duration: 0.5 }}
+                                initial={{opacity: 0, scale: 0.8}}
+                                animate={{opacity: 1, scale: 1}}
+                                exit={{opacity: 0, scale: 0.8}}
+                                transition={{duration: 0.5}}
                                 className="text-center py-5"
                             >
                                 <img
                                     src={process.env.PUBLIC_URL + "/img/mouseinjection.gif"}
                                     alt="注射中..."
-                                    style={{ maxWidth: '400px', width: '100%' }}
+                                    style={{maxWidth: '400px', width: '100%'}}
                                 />
                                 <p className="mt-3 text-muted">正在注射中...</p>
                             </motion.div>
@@ -229,7 +231,7 @@ const TransformationPage = () => {
                                         <img
                                             src={results[0].bloodPicture}
                                             alt={results[0]?.result || "blood"}
-                                            style={{ width: 100, height: 50 }}
+                                            style={{width: 100, height: 50}}
                                         />
                                     )}
                                 </div>
@@ -256,6 +258,22 @@ const TransformationPage = () => {
                             </motion.div>
                         )}
                     </AnimatePresence>
+                </div>
+                <div
+                    style={{
+                        position: 'absolute',
+                        bottom: '10px',
+                        right: '15px',
+                        opacity: 0.5,
+                        fontSize: '0.8rem',
+                        color: '#6c757d',
+                        userSelect: 'none',
+                        textAlign: 'right',
+                        lineHeight: '1.2',
+                    }}
+                >
+                    © 2025 YC Hsu & SY Tang<br/>
+                    Nonprofit, for educational use only
                 </div>
             </div>
         </div>
